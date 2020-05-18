@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AsyncStorage } from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
 import { useTransactionObservation_UNSTABLE, RecoilRoot as Root } from 'recoil';
 
 
@@ -22,7 +22,6 @@ export const RecoilRoot = ({ children, loading }) => {
     const [isReady, setIsReady] = useState(false);
     const initialState = ({ set }) => {
         AsyncStorage.getAllKeys((error, keys) => {
-            console.log(error);
             const promises = keys.map((key) =>
                 AsyncStorage.getItem(key)
             );

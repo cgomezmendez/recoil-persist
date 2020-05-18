@@ -29,6 +29,7 @@
   "homepage": "https://github.com/cgomezmendez/recoil-persist#readme",
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
+    "@react-native-community/async-storage": "^1.10.1",
     "flow-bin": "^0.125.1",
     "rollup-plugin-includepaths": "^0.2.3"
   },
