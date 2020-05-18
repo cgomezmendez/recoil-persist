@@ -1,0 +1,11 @@
+dist
+node_modules
+
+*Pods/
+.vs
+.vscode
+.DS_Store
+package-lock.json
+*.log
+.nvm
+
