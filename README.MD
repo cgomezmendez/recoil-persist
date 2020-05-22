@@ -9,19 +9,19 @@ Persist and rehydrate recoil store.
 
 If you are using react, wrap your root component with RecoilRoot imported from *recoil-persist*. This delays the rendering of your app's UI until your persisted state has been retrieved and saved to redux. NOTE the RecoilRoot loading prop can be null, or any react instance, e.g. loading={<Loading />}
 
+```javascript
+import {RecoilRoot} from 'recoil-perist';
 
-    import {RecoilRoot} from 'recoil-perist';
+//... normal setup, import components etc.
 
-    //... normal setup, import components etc.
-
-    const App = () => {
-        return (
-            <RecoilRoot loading={null}>
-                <RootComponent />
-            </RecoilRoot>
-        );
-    }
-
+const App = () => {
+    return (
+        <RecoilRoot loading={null}>
+            <RootComponent />
+        </RecoilRoot>
+    );
+}
+```
 
 ### React Integration
 
